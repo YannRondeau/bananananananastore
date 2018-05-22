@@ -1,0 +1,58 @@
+img {
+	width: 185px;
+	float: left;
+	padding-right: 10px;
+}
+
+.flex {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	width: 100%;
+}
+
+p {
+	display: block;
+}
+
+h1 {
+	text-align: center;
+	border-bottom: 20px double royalblue;
+	padding-bottom: 30px;
+}
+
+.products {
+	margin-top: 30px;
+	border: 5px double royalblue;
+	border-radius: 12px;
+	padding: 25px;
+	background-color: rgb(236, 179, 255);
+}
+
+form {
+	text-align: right;
+}
+
+div {
+	width: 25%;
+}
+
+html {
+	background-color: rgb(255, 230, 242);
+}
+
+a {
+	text-decoration: none;
+	color: royalblue;
+}
+
+.center {
+	display: block;
+	margin: 0 auto;
+	width: 50%;
+}
+
+fieldset {
+	width: 30%;
+	margin: 0 auto;
+}
