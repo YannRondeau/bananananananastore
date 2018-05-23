@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../public/style.css">
+	<title>Banana Store</title>
+</head>
+<body>
+	<header>
+		
+		<p>
+			<?php
+				
+				
+				if (!$_SESSION) {
+						echo "<a href='../public/user.php'>S'identifier</a>";
+				} else {
+
+					$username = $_SESSION['firstname'] . " " . $_SESSION['lastname']; 
+					
+
+					echo "You are connected " . $username;
+					echo " <a href='../public/disconnect.php'> Disconnect</a>";
+					
+				}				
+
+
+			?>
+
+			
+		<h1><a href="../public/shop.php">Welcome to Banana Store</a></h1>
+
+		</p>
+
+		<form action="../public/recherche.php" method="get">
+			<input type="text" name="recherche">
+			<button type="submit" value="search">Search</button>
+		</form>
+
+		
+	</header>

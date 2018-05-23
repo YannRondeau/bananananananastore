@@ -56,3 +56,11 @@ fieldset {
 	width: 30%;
 	margin: 0 auto;
 }
+
+.red {
+	color: red;
+}
+
+.green {
+	color: green;
+}
