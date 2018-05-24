@@ -10,8 +10,7 @@
 		
 		<p>
 			<?php
-				
-				
+
 				if (!$_SESSION) {
 						echo "<a href='../public/user.php'>S'identifier</a>";
 				} else {
@@ -22,15 +21,21 @@
 					echo "You are connected " . $username;
 					echo " <a href='../public/disconnect.php'> Disconnect</a>";
 					
-				}				
+				}	
 
 
 			?>
-
-			
-		<h1><a href="../public/shop.php">Welcome to Banana Store</a></h1>
-
 		</p>
+
+		<p>
+			<a class='right' href="../public/panier.php">Mon Panier : 
+				
+				<?= count($_SESSION['panier']); ?>
+
+			</a>
+		</p>
+
+		<h1><a href="../public/shop.php">Welcome to Banana Store</a></h1>
 
 		<form action="../public/recherche.php" method="get">
 			<input type="text" name="recherche">

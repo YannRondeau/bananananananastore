@@ -25,6 +25,7 @@ foreach($list as $key => $product) {
 		echo "<p>Quantity : $product[quantity]</p>";
 		echo "<p>Description : $product[description]</p>";
 		echo "$inStock";
+		echo "<a href='product.php?id=$product[id]'>Voir produit</a>";
 		echo "<br>";
 	echo "</div>";
 }

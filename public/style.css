@@ -64,3 +64,31 @@ fieldset {
 .green {
 	color: green;
 }
+
+.product {
+	margin-top: 30px;
+	border: 5px double royalblue;
+	border-radius: 12px;
+	padding: 25px;
+	background-color: rgb(236, 179, 255);
+	width:80%;
+	height: 600px;
+}
+
+.product > img {
+	width: 600px;
+
+}
+
+.product > p {
+	font-size: 30px;
+	display: inline-block;
+
+
+}
+
+.right {
+	float: right;
+	border: 1px solid royalblue;
+	padding: 10px;
+}

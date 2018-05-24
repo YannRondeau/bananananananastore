@@ -10,11 +10,11 @@ function getProductList($word = null) {
 	include "connexion.php";
 
 	if ($word == null) {
-		$sql = "SELECT * FROM products";	
+		$sql = "SELECT * FROM products";
 	} else {
-		$sql = "SELECT * FROM products WHERE name LIKE '%$word%'";	
+		$sql = "SELECT * FROM products WHERE name LIKE '%$word%'";
 	}
-	
+
 	$statement = $db->query($sql, \PDO::FETCH_ASSOC);
 
 	$products = [];
@@ -41,10 +41,23 @@ function getConnect($email, $password) {
 			return $user;
 		} else if ($password != $user['password']) {
 			return 1;
-		} 
+		}
 	} else {
 		return 2;
 	}
 }
+function getProduct($id) {
+	include "connexion.php";
 
+	$sql = "SELECT * FROM products WHERE id LIKE '$id'";
+		
+
+	$statement = $db->prepare($sql);
+	$statement->execute();
+	$product = $statement->fetch(\PDO::FETCH_ASSOC);
+
+
+	return $product;
+
+}
 

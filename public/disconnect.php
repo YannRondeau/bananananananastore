@@ -15,7 +15,7 @@
           
         header('Location: shop.php?deco=1');
   
-    }else{ // Dans le cas contraire on t'empêche d'accéder à cette page en te redirigeant vers la page que tu veux.
+    } else{ // Dans le cas contraire on t'empêche d'accéder à cette page en te redirigeant vers la page que tu veux.
   
         header('Location: shop.php');
   
